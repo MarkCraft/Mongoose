@@ -1,3 +1,8 @@
+"""
+Author: Mark Craft
+email: mdc2913@rit.edu
+"""
+
 import ipaddress
 from scapy.all import *
 from scapy.layers.inet import IP, TCP
