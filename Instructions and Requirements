@@ -7,3 +7,10 @@ HOW TO RUN
 - Openn a terminal
 - type "python3 mongoose.py"
 - Follow the prompts based on how you want to run the program
+
+INPUTS
+- Run program in random mode or not: "Y" or "N"
+- Target machine IP address: eg. 192.168.10.25
+- Target port: eg. 80
+- Source port: eg. 1234 
+- If running in percise mode, you will need to specifiy a source IP address: eg. 154.20.70.5
