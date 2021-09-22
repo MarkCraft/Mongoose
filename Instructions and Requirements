@@ -4,7 +4,7 @@ REQUIRED PACKAGES
 - scapy (install with pip)
 
 HOW TO RUN
-- Openn a terminal
+- Open a terminal
 - type "python3 mongoose.py"
 - Follow the prompts based on how you want to run the program
 
