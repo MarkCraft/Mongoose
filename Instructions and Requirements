@@ -1,0 +1,9 @@
+YOU WILL NEED TO RUN THIS ON A KALI BOX
+
+REQUIRED PACKAGES 
+- scapy (install with pip)
+
+HOW TO RUN
+- Openn a terminal
+- type "python3 mongoose.py"
+- Follow the prompts based on how you want to run the program
